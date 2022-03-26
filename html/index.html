@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <title>Loffe Friends</title>
+    </head>
+    <body>
+        <div class="main hidden" id="main">
+            <div class="navbar">
+                <div class="button">
+                    <a onclick="toggleView('friends')" id="friends-button"><i class="fa-solid fa-people-group"></i> Your friends</a>
+                </div>
+                <div class="button">
+                    <a onclick="toggleView('add')" id="add-button"><i class="fa-solid fa-person-circle-plus"></i> Add a friend</a>
+                </div>
+                <div class="button">
+                    <a onclick="toggleView('requests')" id="requests-button"><i class="fa-solid fa-person-circle-question"></i> Friend requests</a>
+                </div>
+            </div>
+
+            <div id="friends" class="hidden content">
+                <h1>Your friends</h1>
+            </div>
+
+            <div id="add" class="hidden content">
+                <h1>Add a friend</h1>
+                <div class="search-friend">
+                    <input title="Player ID" type="number" id="friendid" placeholder="Player ID" min="0">
+                    <div class="button" onclick="sendRequest()">
+                        <i class="fa-solid fa-person-circle-plus"></i> Add friend
+                    </div>
+                </div>
+                <h1>Outgoing friend requests</h1>
+            </div>
+
+            <div id="requests" class="hidden content">
+                <h1>Your friend requests</h1>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
