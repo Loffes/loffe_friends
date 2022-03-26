@@ -2,7 +2,7 @@
 FiveM Friend menu, currently only for esx. Will add support for qb-core (& maybe standalone) soon.
 
 Currently this script only draws a 3d text over your friends name. 
-YouTube showcase comin soon.
+Performance: 0.00ms idle, 0.03-0.04ms drawing
 
 Type /friends to open the menu.
 ## [YouTube Showcase](https://youtu.be/spYp3MYdAlA)
