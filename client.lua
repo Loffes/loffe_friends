@@ -18,8 +18,6 @@ CreateThread(function()
         while not ESX.GetPlayerData() or not ESX.GetPlayerData().job do
             Wait(500)
         end
-
-        ESX.UI.HUD.SetDisplay(0.0)
     end
 
     lib = exports.loaf_lib:GetLib()
