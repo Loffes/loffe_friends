@@ -5,6 +5,7 @@ Currently this script only draws a 3d text over your friends name.
 YouTube showcase comin soon.
 
 Type /friends to open the menu.
+## [YouTube Showcase](https://youtu.be/spYp3MYdAlA)
 
 ## Requirements
 * [loaf_lib](https://github.com/loaf-scripts/loaf_lib)
